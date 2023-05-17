@@ -10,7 +10,7 @@
 
 <script lang="ts" setup>
 import { computed } from 'vue'
-import { NButton, NSelect } from 'naive-ui'
+import { NButton } from 'naive-ui'
 import type { Language, Theme } from '@/store/modules/app/helper'
 import { SvgIcon } from '@/components/index'
 import { useAppStore, useAuthStore, useUserStore } from '@/store'
@@ -97,22 +97,22 @@ function logout() {
 </script>
 
 <template>
-  <div class="p-4 space-y-5 min-h-[200px]">
+  <div class="p-4 space-y-5 min-h-[100px]">
     <div class="space-y-6">
       <div
         class="flex items-center space-x-4"
         :class="isMobile && 'items-start'"
       >
-        <span class="flex-shrink-0 w-[100px]">{{ $t('setting.chatHistory') }}</span>
+        <!-- <span class="flex-shrink-0 w-[100px]">{{ $t('setting.chatHistory') }}</span> -->
 
-        <div class="flex flex-wrap items-center gap-4">
+        <!-- <div class="flex flex-wrap items-center gap-4">
           <NButton size="small" @click="exportData">
             <template #icon>
               <SvgIcon icon="ri:download-2-fill" />
             </template>
             {{ $t('common.export') }}
           </NButton>
-        </div>
+        </div> -->
       </div>
       <div class="flex items-center space-x-4">
         <span class="flex-shrink-0 w-[100px]">{{ $t('setting.theme') }}</span>
@@ -130,7 +130,7 @@ function logout() {
           </template>
         </div>
       </div>
-      <div class="flex items-center space-x-4">
+      <!-- <div class="flex items-center space-x-4">
         <span class="flex-shrink-0 w-[100px]">{{ $t('setting.language') }}</span>
         <div class="flex flex-wrap items-center gap-4">
           <NSelect
@@ -140,7 +140,7 @@ function logout() {
             @update-value="value => appStore.setLanguage(value)"
           />
         </div>
-      </div>
+      </div> -->
       <div
         class="flex items-center space-x-4"
         :class="isMobile && 'items-start'"

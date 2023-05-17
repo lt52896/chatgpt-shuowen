@@ -32,9 +32,9 @@ const userInfo = computed(() => userStore.userInfo)
       </template>
     </div>
     <div class="flex-1 min-w-0 ml-2">
-      <h2 class="overflow-hidden font-bold text-md text-ellipsis whitespace-nowrap">
+      <!-- <h2 class="overflow-hidden font-bold text-md text-ellipsis whitespace-nowrap">
         {{ userInfo.name ?? $t('chat.defaultName') }}
-      </h2>
+      </h2> -->
       <h6 class="overflow-hidden text-xs text-gray-500 text-ellipsis whitespace-nowrap">
         {{ userInfo.email }}
       </h6>

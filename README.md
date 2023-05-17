@@ -1,5 +1,4 @@
 # 说文 [chatgpt-shuowen](https://github.com/mjjh1717/chatgpt-shuowen)
-
 # ✨ 介绍
 
 基于的 [chatgpt-web](https://github.com/Chanzhaoyu/chatgpt-web) 二次开发，适配[后台 chatgpt-web-java](https://github.com/hncboy/chatgpt-web-java)，后续版本开发会在此项目上更新上线新功能
